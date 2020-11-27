@@ -16,7 +16,7 @@ public class Sender {
     public void sendMessage() {
 
         System.out.println("Sending message...");
-        HelloMessage helloMessage = new HelloMessage("hello");
+        HelloMessage helloMessage = new HelloMessage("Hello from JMS demo sender!");
         jmsTemplate.convertAndSend("MY_QUEUE", helloMessage);
         System.out.println("Message sent!");
 
